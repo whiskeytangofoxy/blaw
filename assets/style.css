@@ -41,13 +41,13 @@ body {
   line-height: 1;
   color: #000;
   display: block;
-  margin: 0 0 0.2em -0.031em;
+  margin: 0 0 calc(1.5rem - 0.25em) -0.031em; /* visible gap under the B equals the gap above the text block (1.5rem) */
   padding: 0;
   text-decoration: none;
 }
 
 @media (max-width: 600px) {
-  .letter-b { font-size: 4em; margin-bottom: 0.25em; }
+  .letter-b { font-size: 4em; }
 }
 
 a { color: var(--link); text-underline-offset: 3px; }
@@ -65,7 +65,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 1rem;
 }
 
-.headshot { width: 250px; margin: 1rem auto 2rem; }
+.headshot { width: 250px; margin: 0 auto 2rem; }
 
 h2 {
   font-size: 0.95rem;
